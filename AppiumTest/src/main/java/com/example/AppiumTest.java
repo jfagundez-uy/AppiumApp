@@ -18,9 +18,8 @@ public class AppiumTest {
     public void setUp() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "iOS");
-        caps.setCapability("platformVersion", "14.4"); // Ajusta según la versión del emulador
+        caps.setCapability("platformVersion", "14.4");
         caps.setCapability("deviceName", "iPhone Simulator");
-        caps.setCapability("app", "/path/to/your/app.app"); // Ajusta la ruta a tu aplicación
 
         driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
     }
